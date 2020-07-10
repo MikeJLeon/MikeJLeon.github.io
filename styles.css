@@ -77,6 +77,8 @@ body {
   .mainContainer{
       width:1200px;
       margin:0 auto;
+      text-align:center;
+      font-size:1.25rem;
   }
 
   .workContainer{
@@ -127,6 +129,9 @@ body {
     width:100%;
 
   }
+  #about p, .projectContent p{
+    text-align:left;
+  }
   #jmtint{
     background:rgb(251,128,65);
   }
@@ -144,3 +149,42 @@ body {
   .siteButton, .infoButton{
     background-color:white;
   }
+.inner{
+  position:relative;
+  height:100%;
+  width:100%;
+}
+.innerText{
+  display:flex;
+  width:100%;
+  height:100%;  
+  position:absolute;
+  top:0;
+  left:0;
+  justify-content: center;
+  align-items: center;
+}
+#arrowContainer{
+  width:100%;
+  height:100%;
+  display:Flex;
+  position:absolute;
+  top:0;
+  left:0;
+  justify-content: center;
+  align-items:flex-end;
+}
+.scrollArrow{
+  font-size:4rem;
+  transition:all 1.5s, color 0.5s;
+  cursor:pointer;
+  margin-bottom:50px;
+}
+.scrollArrowAnimation{
+  font-size:5rem;
+  transition:all 1.5s, color 0.5s;
+}
+.scrollArrow:hover{
+  color:rgb(114, 35, 35);
+  transition:all 1.5s, color 0.5s;
+}
