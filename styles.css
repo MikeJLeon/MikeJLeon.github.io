@@ -8,13 +8,17 @@ html{
 body {
     margin: 0;
     font-family:"Roboto-Regular";
-    background-color:#142850;
-    color:#dae1e7;
-    height:200vh;
+    background-color:#dae1e7;
+    color:#142850;
+    max-height:2000px;
   }
   .topContainer {
     height: 100vh;
-    width: 100%;
+    margin:0 auto;
+    width:800px;
+  }
+  .topContainer h1{
+    text-align:left;
   }
   #myVideo {
     position: absolute;
@@ -34,7 +38,7 @@ body {
       z-index:2;
       height:100%;
       width:100%;
-      color:white;
+      color:#142850;
       text-align:Center;
   }
   nav {
@@ -45,8 +49,9 @@ body {
     top: 0;
     width: 100%;
     z-index:3;
-    background-color: #00909e;
+    background-color: #142850;
     transition:transform 0.5s;
+    box-shadow:0 1px 20px 10px #888888;
   }
   .initializeNav{
     transform:translate(0, -200px);
@@ -77,10 +82,10 @@ body {
   }
   nav ul li a{
       color:#f9f7f7;
-      transition:all 0.5s;
+      transition:color 0.5s;
   }
   nav ul li:hover, nav ul li a:hover{
-    color: #112d4e;
+    color: #00909e;
     transition: color 0.25s;
     cursor: pointer;
   }
@@ -102,27 +107,23 @@ body {
   animation: shake;
   animation-duration:0.5s;
   transform-origin:50% 50%;
-  color:#27496d;
-  transition:all 0.5s;
+  color:#00909e;
 }
   .mainContainer{
       position:relative;
       width:1200px;
       margin:0 auto;
-      text-align:center;
       font-size:1.25rem;
   }
 
-  .workContainer{
-    display:Grid;
-    grid-template-columns: 400px 400px 400px;
-    grid-template-rows: 300px;
-  }
   .projectContainer{
+    display:grid;
+    grid-template-rows:50px, 300px, 50px;
+    flex-direction:column;
     position:relative;
     margin:10px;
-    border-radius:25px;
     overflow:hidden;
+    height:400px;
   }
   .projectContainer img{
     position:absolute;
@@ -136,30 +137,65 @@ body {
     opacity:0;
     transition:opacity 0.3s;
   }
+  .projectHeaderContainer{
+    position:relative;
+    margin-bottom:30px;
+  }
   .projectContainer:hover .projectHeader{
-    top:10;
+    top:20;
     font-size:2rem;
     transition:top 0.3s, font-size 0.3s;
   }
   .projectContainer:hover .projectContent{
     opacity:1;
     color:white;
+    transition:opacity 0.3s;
+  }
+  .projectContainer:hover .buttonContainer{
+    opacity:1;
+    transition:opacity 0.3s;
   }
   .projectHeader{
     position:absolute;
-    width:100%;
-    text-align: center;
     margin:0;
-    top:140px;
+    top:190px;
+    text-align:center;
+    font-size:2rem;
+    width:100%;
     z-index:2;
     color:white;
     transition:top 0.3s, font-size 0.3s;
   }
   .projectContent{
-    opacity:1;
-    margin-top:25%;
+    opacity:0;
+    padding-left:10px;
+    padding-right:10px;
     width:100%;
-
+  }
+  .workContainer{
+    display:grid;
+    grid-template-columns:10% 90%;
+  }
+  .projects{
+    display:grid;
+    grid-template-columns: 400px 400px;
+    margin-left:10px;
+    margin-bottom:100px;
+    border-left:1px solid black;
+  }
+  #about{
+    display:flex;
+    height:100vh;
+    justify-content: center;
+    flex-direction:column;
+  }
+  #about p{
+    font-size: 1.5rem;
+    margin-top:5px;
+  }
+  #about h1{
+    font-size:3rem;
+    margin-bottom:10px;
   }
   #about p, .projectContent p{
     text-align:left;
@@ -174,12 +210,34 @@ body {
     background:rgb(26, 49, 100);
   }
   .buttonContainer{
-    display:Grid;
+    display:grid;
+    opacity:0;
+    justify-content: center;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows:40px;
+    margin-bottom:20px;
     width:100%;
-    grid-template-columns: 50px 50px;
+  }
+  .siteButton{
+    grid-column-start: 1;
+  }
+  .infoButton{
+    grid-column-start: 3;
   }
   .siteButton, .infoButton{
+    cursor:pointer;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    z-index:5;
+    border-radius:10px;
+    width:100px;
+    text-align:center;
     background-color:white;
+  }
+  .siteButton:hover, .infoButton:hover{
+   background-color:#00909e;
+   color:#f9f7f7;
   }
 .inner{
   position:relative;
@@ -206,28 +264,21 @@ body {
   justify-content: center;
   align-items:flex-end;
 }
-.scrollArrow{
-  font-size:4rem;
-  transition:all 1.5s, color 0.5s;
-  cursor:pointer;
-  margin-bottom:50px;
+.name{
+  color:#142850;
+  transition:color 3.0s;
 }
-.scrollArrowAnimation{
-  font-size:5rem;
-  transition:all 1.5s, color 0.5s;
-}
-.scrollArrow:hover{
+.nameGreen{
   color:#00909e;
-  transition:all 1.5s, color 0.5s;
+  transition:color 3.0s;
 }
-
-.show{
+.show, .aboutContent{
   transform: translate(0, 0);
   opacity:1;
-  transition: all 1.5s;
+  transition: transform 1.5s, opacity 1.5s;
 }
-.hidden{
+.hidden, .hiddenAbout{
   transform: translate(0, 200px);
   opacity:0;
-  transition: all 1.5s;
+  transition: transform 1.5s, opacity 1.5s;
 }

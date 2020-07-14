@@ -28,6 +28,13 @@ function initialize(){
     window.setTimeout(typeLetters.bind(chara), current);
     current += 100;
   }
+  let about = document.getElementsByClassName("hiddenAbout");
+  let aboutElements = [...about];
+  current = 1000;
+  for(let element of aboutElements){
+    console.log(aboutElements);
+    window.setTimeout(showAbout.bind(element), current);
+  }
   current = 0;
   document.getElementsByClassName("initializeNav")[0].classList.remove('initializeNav');
   let buttons = document.getElementsByClassName("initializeButtons");
@@ -37,6 +44,9 @@ function initialize(){
     window.setTimeout(showNavButtons.bind(element), current);
     current += 200;
   }
+}
+function showAbout(){
+  this.classList.remove("hiddenAbout");
 }
 function showNavButtons(){
   this.classList.remove("initializeButtons");
