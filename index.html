@@ -7,27 +7,25 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/app.js"></script>
+    
   </header>
   <body>
-    <nav>
+    <nav class="initializeNav">
       <ul>
-        <li><a href=#home>Home</li></a>
-        <li><a href=#projects>Projects</li></a>
-        <li><a href=#contact>Contact</li></a>
-        <li><a href=#resume>Resume</a></li>
-        <li><i class="fab fa-github-square fa-2x"></i></li>
-        <li><i class="fab fa-linkedin fa-2x"></i></li>
+        <li class="initializeButtons"><a href="#home">Home</a></li>
+        <li class="initializeButtons"><a href="#projects">Projects</a></li>
+        <li class="initializeButtons"><a href="#contact">Contact</a></li>
+        <li class="initializeButtons shaky"><a href="#resume">Resume</a></li>
+        <li class="initializeButtons shaky"><i class="fab fa-github-square fa-2x"></i></li>
+        <li class="initializeButtons shaky"><i class="fab fa-linkedin fa-2x"></i></li>
       </ul>
     </nav>
     <div class="topContainer" id="home">
-      <video autoplay muted loop id="myVideo">
-        <source src="video/city.mp4" type="video/mp4" />
-      </video>
       <div class="topContent">
         <div class="inner">
           <div class="innerText">
             <div>
-              <h1>Michael Leon</h1>
+              <h1 class="name"></h1>
               <p>Software Developer</p>
             </div>
           </div>
@@ -38,14 +36,14 @@
       </div>
     </div>
     <div class="mainContainer">
-        <div  id="about">
+        <div  class="hidden show" id="about">
             <h1>About</h1>
             <p>I am an aspiring Web / Software Developer, I am constantly seeking new technologies to learn that I can add to my toolkit.
             I have a proven track record of delivering quality records within a timely fashion.
             Outside of programming I play video games, am the father of two lovable dogs (Oreo and Rocky!!) (Picture insert)
             If you are here you will find below my projects, resume and contact information, I am currently open to new opportunities!!</p>
         </div>
-        <div id="projectsContainer">
+        <div class="hidden show" id="projectsContainer">
             <h1>Projects</h1>
             <h2>Professional Work</h2>
             <div class="workContainer">
@@ -78,12 +76,14 @@
               </div>
             </div>
         </div>
-        <div id="contact">
+        <div class="hidden show" id="contact">
             <h1>Contact</h1>
         </div>
-        <div id="resume">
+        <div class="hidden show" id="resume">
             <h1>Resume</h1>
         </div>
     </div>
   </body>
+  <script>
+  </script>
 </html>
