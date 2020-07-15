@@ -182,7 +182,7 @@ nav ul li a:hover {
 .projectHeader {
   position: absolute;
   margin: 0 auto;
-  top: 190px;
+  top: 140px;
   width: 280px;
   text-align: center;
   font-size: 1.75rem;
@@ -196,16 +196,19 @@ nav ul li a:hover {
 }
 .workContainer {
   display: grid;
+  margin-bottom:50px;
   grid-template-columns: 200px 1000px;
 }
 .workTitle {
   border-right: 1px solid #142850;
 }
+.workTitle p{
+  margin:0;
+}
 .projects {
   display: grid;
   grid-template-columns: 310px 310px 310px;
   margin-left: 10px;
-  margin-bottom: 100px;
 }
 #about {
   display: flex;
