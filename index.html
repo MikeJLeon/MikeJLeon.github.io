@@ -6,7 +6,8 @@
       src="https://kit.fontawesome.com/3cb78e5783.js"
       crossorigin="anonymous"
     ></script>
-    <script src="js/app.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/index.js"></script>
   </head>
   <body>
     <nav>
@@ -15,23 +16,27 @@
         <li class="initializeButtons"><a href="#projectAnchor">Projects</a></li>
         <li class="initializeButtons"><a href="#contactAnchor">Contact</a></li>
         <li class="initializeButtons shaky">
-          <a href="/other/resume.docx" download>Resume</a>
+          <a href="/other/Mike_Leon_Resume_07152020.pdf" download>Resume</a>
         </li>
         <li class="initializeButtons shaky">
-          <i class="fab fa-github-square fa-2x"></i>
+          <a href="https://github.com/MikeJLeon" target="_blank">
+            <i class="fab fa-github-square fa-2x"></i
+          ></a>
         </li>
         <li class="initializeButtons shaky">
-          <i class="fab fa-linkedin fa-2x"></i>
+          <a href="https://www.linkedin.com/in/mikejleon" target="_blank">
+            <i class="fab fa-linkedin fa-2x"></i
+          ></a>
         </li>
       </ul>
     </nav>
     <div class="anchor" id="homeAnchor"></div>
-    <header class="topContainer" id="home">
-      <div class="topContent">
-        <section class="inner initialize show" id="about">
+    <div id="content">
+      <main>
+        <section class="initialize show" id="intro">
           <h1 class="name"></h1>
-          <p class="aboutContent hiddenAbout">Software Developer</p>
-          <p class="aboutContent hiddenAbout">
+          <p class="introTitle hiddenIntro">Software Developer</p>
+          <p class="introSummary hiddenIntro">
             Full-stack application developer with experience using popular
             front-end and back-end frameworks such as ReactJS and ExpressJS.
             Proven ability to create full-stack applications with efficient and
@@ -39,186 +44,128 @@
             exploring and learning new technologies.
           </p>
         </section>
-      </div>
-    </header>
-    <div class="mainContainer">
-      <div class="anchor" id="projectAnchor"></div>
-      <section class="hidden show" id="projects">
-        <h2>Projects</h2>
-        <div class="workContainer">
-          <div class="workTitle"><p>Professional Work</p></div>
-          <div class="projects">
-            <div class="projectContainer" id="jmtint">
-              <div class="projectHeaderContainer">
-                <p class="projectHeader">JeffreyM Consulting</p>
-              </div>
-              <div class="projectContent">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam pharetra viverra maximus. Integer vitae hendrerit erat.
-                  Vestibulum in enim purus. Nullam at lobortis nunc. Donec id
-                  nunc interdum, pellentesque lacus ac, scelerisque nisl.
-                  Vestibulum porta ullamcorper volutpat. Pellentesque mauris
-                  leo.
-                </p>
-              </div>
-              <div class="buttonContainer">
-                <div class="siteButton">
-                  SITE
-                </div>
-                <div class="infoButton">
-                  INFO
-                </div>
-              </div>
-              <img src="img/jeffreym.jpg" />
-            </div>
-            <div class="projectContainer" id="bbtint">
-              <div class="projectHeaderContainer">
-                <p class="projectHeader">Ben Bridge Jewelers</p>
-              </div>
-              <div class="projectContent">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam pharetra viverra maximus. Integer vitae hendrerit erat.
-                  Vestibulum in enim purus. Nullam at lobortis nunc. Donec id
-                  nunc interdum, pellentesque lacus ac, scelerisque nisl.
-                  Vestibulum porta ullamcorper volutpat. Pellentesque mauris
-                  leo.
-                </p>
-              </div>
-              <div class="buttonContainer">
-                <div class="siteButton">
-                  SITE
-                </div>
-                <div class="infoButton">
-                  INFO
-                </div>
-              </div>
-              <img src="img/benbridge.jpg" />
-            </div>
-            <div class="projectContainer" id="bbtint">
-              <div class="projectHeaderContainer">
-                <p class="projectHeader">Ben Bridge Jewelers</p>
-              </div>
-              <div class="projectContent">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam pharetra viverra maximus. Integer vitae hendrerit erat.
-                  Vestibulum in enim purus. Nullam at lobortis nunc. Donec id
-                  nunc interdum, pellentesque lacus ac, scelerisque nisl.
-                  Vestibulum porta ullamcorper volutpat. Pellentesque mauris
-                  leo.
-                </p>
-              </div>
-              <div class="buttonContainer">
-                <div class="siteButton">
-                  SITE
-                </div>
-                <div class="infoButton">
-                  INFO
-                </div>
-              </div>
-              <img src="img/benbridge.jpg" />
-            </div>
-            <div class="projectContainer" id="bbtint">
-              <div class="projectHeaderContainer">
-                <p class="projectHeader">Ben Bridge Jewelers</p>
-              </div>
-              <div class="projectContent">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam pharetra viverra maximus. Integer vitae hendrerit erat.
-                  Vestibulum in enim purus. Nullam at lobortis nunc. Donec id
-                  nunc interdum, pellentesque lacus ac, scelerisque nisl.
-                  Vestibulum porta ullamcorper volutpat. Pellentesque mauris
-                  leo.
-                </p>
-              </div>
-              <div class="buttonContainer">
-                <div class="siteButton">
-                  SITE
-                </div>
-                <div class="infoButton">
-                  INFO
-                </div>
-              </div>
-              <img src="img/benbridge.jpg" />
-            </div>
-            <div class="projectContainer" id="jmtint">
-              <div class="projectHeaderContainer">
-                <p class="projectHeader">JeffreyM Consulting</p>
-              </div>
-              <div class="projectContent">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam pharetra viverra maximus. Integer vitae hendrerit erat.
-                  Vestibulum in enim purus. Nullam at lobortis nunc. Donec id
-                  nunc interdum, pellentesque lacus ac, scelerisque nisl.
-                  Vestibulum porta ullamcorper volutpat. Pellentesque mauris
-                  leo.
-                </p>
-              </div>
-              <div class="buttonContainer">
-                <div class="siteButton">
-                  SITE
-                </div>
-                <div class="infoButton">
-                  INFO
-                </div>
-              </div>
-              <img src="img/jeffreym.jpg" />
-            </div>
-          </div>
-        </div>
-        <div class="workContainer">
-          <div class="workTitle"><p>Personal Work</p></div>
-          <div class="projects">
-            <div class="projectContainer" id="sampleTint">
-              <div class="projectHeaderContainer">
-                <p class="projectHeader">JeffreyM Consulting</p>
-              </div>
-              <div class="projectContent">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam pharetra viverra maximus. Integer vitae hendrerit erat.
-                  Vestibulum in enim purus. Nullam at lobortis nunc. Donec id
-                  nunc interdum, pellentesque lacus ac, scelerisque nisl.
-                  Vestibulum porta ullamcorper volutpat. Pellentesque mauris
-                  leo.
-                </p>
-              </div>
-              <div class="buttonContainer">
-                <div class="siteButton">
-                  SITE
-                </div>
-                <div class="infoButton">
-                  INFO
-                </div>
-              </div>
-              <img src="img/jeffreym.jpg" />
-            </div>
-          </div>
-        </div>
-      </section>
-      <div class="anchor" id="contactAnchor"></div>
-      <section class="hidden show" id="contact">
-        <h1>Get in touch</h1>
-        <form action="mailto:michael@michaeljleon.com">
-          <p>
-            As of 07/15/2020 I am looking for new opportunities. I currently
-            work for JeffreyM part-time and seeking any full-time opportunities.
-            If you like what you see, feel free to reach out through email by
-            clicking the button below! :)
+        <div class="anchor" id="aboutAnchor"></div>
+        <section class="hidden show" id="about">
+          <h1>About</h1>
+          <p class="aboutContent">
+            Hi! I am Michael, I've started my journey as a software developer
+            back in 2018. I enjoy casting a wide net into many technologies but
+            my focus recently has been HTML JavaScript and CSS. Outside of
+            coding I enjoy gaming and going on small adventures with my dogs and
+            recently have picked up working on my health.
           </p>
-          <input id="submit" type="submit" value="Send Email" />
-        </form>
-      </section>
-      <section class="hidden show" id="resume">
-        <h1>Resume</h1>
-        <a href="/other/resume.docx" download
-          ><i class="resume fas fa-file"></i
-        ></a>
-      </section>
+        </section>
+        <div class="anchor" id="projectAnchor"></div>
+        <section class="hidden show" id="projects">
+          <h1>Projects</h1>
+          <div class="workContainer">
+            <div class="workTitle"><p>Professional Work</p></div>
+            <div class="projects">
+              <div class="projectContainer" id="jmtint">
+                <div class="projectHeaderContainer">
+                  <p class="projectHeader">JeffreyM Consulting</p>
+                </div>
+                <div class="projectContent">
+                  <p>
+                    Starting out as a freelancer, I helped create the new
+                    website for JeffreyM Consulting. I created the website
+                    following a strict design doc while working with the graphic
+                    designer and another developer. Later on after completition
+                    I was asked if I could continue developing on the site when
+                    ever it is required.
+                  </p>
+                  <p>Html, CSS, JavaScript, WordPress</p>
+                </div>
+                <div class="buttonContainer">
+                  <div class="siteButton">
+                    <a href="http://www.jeffreym.com" target="_blank">
+                      SITE
+                    </a>
+                  </div>
+                  <div class="infoButton">
+                    <a href="jeffreyM.html" target="_blank">
+                      Info
+                    </a>
+                  </div>
+                </div>
+                <img src="img/jeffreym.jpg" />
+              </div>
+              <div class="projectContainer" id="bbtint">
+                <div class="projectHeaderContainer">
+                  <p class="projectHeader">Ben Bridge Jeweler</p>
+                </div>
+                <div class="projectContent">
+                  <p>
+                    Hired as a web developer intern. I was tasked to fix bugs
+                    found on the website, document components that were not
+                    already recorded, complete tickets found in Jira, worked on
+                    a internal nodejs project to create html documents to add to
+                    salesforce.
+                  </p>
+                  <p>
+                    HTML CSS JavaScript MySQL
+                  </p>
+                </div>
+                <div class="buttonContainer">
+                  <div class="siteButton">
+                    <a href="http://www.benbridge.com" target="_blank">
+                      SITE
+                    </a>
+                  </div>
+                  <div class="infoButton">
+                    INFO
+                  </div>
+                </div>
+                <img src="img/benbridge.jpg" />
+              </div>
+            </div>
+          </div>
+          <div class="workContainer">
+            <div class="workTitle"><p>Personal Work</p></div>
+            <div class="projects">
+              <div class="projectContainer" id="sampleTint">
+                <div class="projectHeaderContainer">
+                  <p class="projectHeader">Awesome Project</p>
+                </div>
+                <div class="projectContent">
+                  <p>
+                    What a cool project, I've made the big bucks.
+                  </p>
+                  <p>
+                    HTML CSS C# MYSQL
+                  </p>
+                </div>
+                <div class="buttonContainer">
+                  <div class="siteButton">
+                    SITE
+                  </div>
+                  <div class="infoButton">
+                    INFO
+                  </div>
+                </div>
+                <img src="img/jeffreym.jpg" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="anchor" id="contactAnchor"></div>
+        <section class="hidden show" id="contact">
+          <h1>Get in touch</h1>
+          <form action="mailto:michael@michaeljleon.com">
+            <p>
+              As of 07/15/2020 I am looking for new opportunities. I currently
+              work for JeffreyM part-time and seeking any full-time
+              opportunities. If you like what you see, feel free to reach out
+              through email by clicking the button below! :)
+            </p>
+            <input id="submit" type="submit" value="Send Email" />
+          </form>
+        </section>
+        <section class="hidden show" id="resume">
+          <h1>Resume</h1>
+          <a href="/other/Mike_Leon_Resume_07152020.pdf" download><i class="fas fa-file"></i></a>
+        </section>
+      </main>
     </div>
     <div id="test"></div>
   </body>
