@@ -10,7 +10,7 @@
     <script src="js/index.js"></script>
   </head>
   <body>
-    <nav>
+    <nav class="desktopNav">
       <ul class="initializeNav">
         <li class="initializeButtons"><a href="#homeAnchor">Home</a></li>
         <li class="initializeButtons"><a href="#projectAnchor">Projects</a></li>
@@ -30,6 +30,33 @@
         </li>
       </ul>
     </nav>
+    <nav class="mobileNav">
+      <ul id="leftNav">
+        <li class="initializeButtons shaky">
+          <a href="/other/Mike_Leon_Resume_07152020.pdf" download>Resume</a>
+        </li>
+        <li class="initializeButtons shaky">
+          <a href="https://github.com/MikeJLeon" target="_blank">
+            <i class="fab fa-github-square fa-2x"></i
+          ></a>
+        </li>
+        <li class="initializeButtons shaky">
+          <a href="https://www.linkedin.com/in/mikejleon" target="_blank">
+            <i class="fab fa-linkedin fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+      <i id="rightNav" class="fa fa-bars" aria-hidden="true">
+      </i>
+      
+    </nav>
+    <nav class="mobileHam">
+      <ul class="hamNav">
+        <li><a href="#homeAnchor">Home</a></li>
+        <li><a href="#projectAnchor">Projects</a></li>
+        <li><a href="#contactAnchor">Contact</a></li>
+      </ul>
+    </nav>
     <div class="anchor" id="homeAnchor"></div>
     <div id="content">
       <main>
@@ -47,13 +74,16 @@
         <div class="anchor" id="aboutAnchor"></div>
         <section class="hidden show" id="about">
           <h1>About</h1>
-          <p class="aboutContent">
-            Hi! I am Michael, I've started my journey as a software developer
-            back in 2018. I enjoy casting a wide net into many technologies but
-            my focus recently has been HTML JavaScript and CSS. Outside of
-            coding I enjoy gaming and going on small adventures with my dogs and
-            recently have picked up working on my health.
-          </p>
+          <div id="aboutContent">
+            <p>
+              Hi! I am Michael, I've started my journey as a software developer
+              back in 2018. I enjoy casting a wide net into many technologies
+              but my focus recently has been HTML JavaScript and CSS. Outside of
+              coding I enjoy gaming and going on small adventures with my dogs
+              and recently have picked up working on my health.
+            </p>
+            <img src="img/meEdited.jpg" />
+          </div>
         </section>
         <div class="anchor" id="projectAnchor"></div>
         <section class="hidden show" id="projects">
@@ -118,6 +148,28 @@
                 </div>
                 <img src="img/benbridge.jpg" />
               </div>
+              <div class="projectContainer" id="sampleTint">
+                <div class="projectHeaderContainer">
+                  <p class="projectHeader">Awesome Project</p>
+                </div>
+                <div class="projectContent">
+                  <p>
+                    What a cool project, I've made the big bucks.
+                  </p>
+                  <p>
+                    HTML CSS C# MYSQL
+                  </p>
+                </div>
+                <div class="buttonContainer">
+                  <div class="siteButton">
+                    SITE
+                  </div>
+                  <div class="infoButton">
+                    INFO
+                  </div>
+                </div>
+                <img src="img/jeffreym.jpg" />
+              </div>
             </div>
           </div>
           <div class="workContainer">
@@ -163,7 +215,9 @@
         </section>
         <section class="hidden show" id="resume">
           <h1>Resume</h1>
-          <a href="/other/Mike_Leon_Resume_07152020.pdf" download><i class="fas fa-file"></i></a>
+          <a href="/other/Mike_Leon_Resume_07152020.pdf" download
+            ><i class="fas fa-file"></i
+          ></a>
         </section>
       </main>
     </div>
