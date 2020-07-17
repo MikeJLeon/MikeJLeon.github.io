@@ -173,7 +173,7 @@ main {
 .projectContainer:hover .projectContent {
   opacity: 1;
   color: white;
-  transition: opacity 0.3s;
+  transition: opacity 0.5s;
 }
 .projectContainer:hover .buttonContainer {
   opacity: 1;
@@ -261,25 +261,27 @@ main {
   grid-template-columns: 90px 100px 90px;
   grid-template-rows: 40px;
 }
-.siteButton {
+.buttonContainer a:nth-child(1) {
   grid-column-start: 1;
 }
-.infoButton {
+.buttonContainer a:nth-child(2) {
   grid-column-start: 3;
 }
-.siteButton,
-.infoButton {
+.buttonContainer a:nth-child(1),
+.buttonContainer a:nth-child(2)  {
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 5;
-  border-radius: 10px;
+  border-radius: 20px;
   text-align: center;
+  text-decoration: none;
   background-color: white;
+  color:#00909e;
 }
-.siteButton:hover,
-.infoButton:hover {
+.buttonContainer a:nth-child(1):hover,
+.buttonContainer a:nth-child(2):hover {
   background-color: #00909e;
   color: #f9f7f7;
 }
@@ -415,8 +417,9 @@ form p {
     flex-direction: column;
   }
   #aboutContent img {
-    margin: 0 auto;
-    margin-top: 25px;
+    margin: 100px auto;
+    width:600px;
+    height:600px;
   }
   .workContainer {
     flex-direction: column;
@@ -553,6 +556,10 @@ form p {
   .mobileHam {
     display: block;
   }
+  #resume a i{
+    font-size:100px;
+  }
+
 }
 
 @media all and (max-width: 480px) {
