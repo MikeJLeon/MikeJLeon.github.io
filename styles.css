@@ -374,8 +374,8 @@ form p {
 .infoTop p {
   margin: 0;
 }
-.mobileHam{
-  display:None;
+.mobileHam {
+  display: None;
 }
 @media all and (min-width: 1024px) and (max-width: 1280px) {
 }
@@ -407,9 +407,8 @@ form p {
   }
 }
 
-@media all and (max-width: 768px) {
+@media all and (min-width: 481px) and (max-width:1047px) {
   main {
-    min-width: 480px;
     padding: 0 80px;
   }
   #aboutContent {
@@ -427,38 +426,63 @@ form p {
     border-bottom: 1px solid #142850;
   }
   .workTitle p {
+    width:unset;
     text-align: center;
     margin: 0 auto;
     margin-top: 25px;
     margin-bottom: 25px;
   }
   .projects {
+    flex-direction:column;
+    width:100%;
     justify-content: center;
+    align-items: center;
     margin: 0;
     margin-top: 25px;
   }
   .projectContainer {
+    display: grid;
+    grid-template-rows: 100px 400px 100px;
+    grid-template-columns: 580px;
     margin-top: 25px;
+    width:600px;
+    height:600px;
   }
+  .projectContainer:hover .projectHeader{
+    font-size:3rem;
+    width:100%;
+  }
+  .projectContent{
+    grid-template-rows:350px 50px;
+  }
+  .projectContent p{
+    font-size:2rem;
+  }
+  .projectContainer 
   form p {
     text-align: left;
   }
-}
-
-@media all and (max-width: 480px) {
-  main {
-    min-width: 480px;
+  .projectHeader{
+    font-size: 3.5rem;
+    top:280;
+    width:580px;
+  }
+  .buttonContainer{
+    grid-template-columns: 200px 180px 200px;
+    grid-template-rows: 80px;
+    font-size:2.8rem;
   }
   .desktopNav {
     display: none;
   }
   .mobileNav {
     position: fixed;
+    font-size:3rem;
     width: 100%;
     display: flex;
     color: #dae1e7;
     background-color: #142850;
-    height: 50px;
+    height: 150px;
     z-index: 4;
   }
   #leftNav {
@@ -466,13 +490,17 @@ form p {
     justify-content: left;
     position: static;
     width: 100%;
-    padding-left: 10px;
+    height:100%;
     z-index: 4;
   }
+  #leftNav li{
+    padding-left: 25px;
+  }
   #rightNav {
-    font-size: 2rem;
+    font-size: 4rem;
     display: flex;
-    padding-right: 10px;
+    justify-content: center;;
+    margin-right:25px;
     align-items: center;
     transition: transform 0.1s;
     cursor: pointer;
@@ -489,14 +517,14 @@ form p {
     background-color: #00909e;
     top: -99px;
     margin: 0;
-    height: 99px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     z-index: 3;
     transition: top 0.5s;
   }
   .activeHam {
-    top: 50px;
+    top: 150px;
     transition: top 0.5s;
   }
   #rightNav:active {
@@ -505,7 +533,8 @@ form p {
   }
   .hamNav li {
     display: flex;
-    height: 33px;
+    font-size:3rem;
+    height: 33%;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -521,7 +550,13 @@ form p {
   .hamNav li:hover {
     background-color: #142850;
   }
-  .mobileHam{
-    display:block;
+  .mobileHam {
+    display: block;
+  }
+}
+
+@media all and (max-width: 480px) {
+  main {
+    min-width: 480px;
   }
 }
