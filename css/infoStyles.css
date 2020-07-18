@@ -11,6 +11,7 @@ main{
     width:390px;
 }
 .infoModal{
+    display:none;
     position:fixed;
     top:0;
     left:0;
@@ -19,6 +20,11 @@ main{
     width:100vw;
     z-index:5;
 }
+.screenshot:hover .tint{
+    opacity:0.5;
+    color:rgb(251, 128, 65)
+}
+
 .modalBlur{
     position:fixed;
     top:0;
