@@ -3,16 +3,20 @@ main{
 }
 .infoImgs{
     display:flex;
-    grid-template-columns: repeat(auto-fill, 650px);
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+    width:900px;
     overflow:hidden;    
 }
 .infoImgs img{
     margin:5px;
-    max-width:640px;   
+    max-width:100%;
 }
 .imgCarousal{
     overflow:hidden;
     display:Flex;
+    justify-content: center;
 }
 .infoModal{
     display:none;
@@ -39,6 +43,7 @@ main{
     z-index:6;
     font-size:50px;
     color:#dae1e7;
+    cursor:pointer;
 }
 .exitModal:hover{
     color:#00909e;
@@ -46,9 +51,39 @@ main{
 .exitModal:active{
     transform:Scale(0.8);
 }
+.modalTrigger{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    cursor:pointer;
+}
 .infoModal img{
     width:80%;
     max-width:1200px;
-    margin-right:50px;
+    padding-right:50px;
+    padding-left:50px;
+    z-index:5;
+}
+.leftCarousalArrow, .rightCarousalArrow{
+    font-size:75px;
+    transform:scale(1);
+    transition:transform 0.1s;
+}
+.leftCarousalArrow:hover, .rightCarousalArrow:hover{
+    color:#00909e;
+}
+.leftCarousalArrow:active, .rightCarousalArrow:active{
+    transform:scale(0.75);
+    transition:transform 0.1s;
+}
+.leftCarousalArrow{
+    margin-right:15px;
+}
+.rightCarousalArrow{
+    margin-left:15px;
+}
+.moveFromLeft{
     margin-left:50px;
 }
