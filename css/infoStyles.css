@@ -2,42 +2,40 @@ main{
     padding:0 50px;    
 }
 .infoImgs{
-    display:grid;
-    grid-template-columns: repeat(auto-fill, 400px);
+    display:flex;
+    grid-template-columns: repeat(auto-fill, 650px);
+    overflow:hidden;    
 }
 .infoImgs img{
     margin:5px;
-    height:300px;
-    width:390px;
+    max-width:640px;   
+}
+.imgCarousal{
+    overflow:hidden;
+    display:Flex;
 }
 .infoModal{
     display:none;
     position:fixed;
+    justify-content: center;
+    padding:50px;
+    align-items: center;
     top:0;
     left:0;
-    padding:200px;
     height:100vh;
     width:100vw;
+    min-width:480px;
+    background-color: rgba(0,0,0,0.9);
     z-index:5;
 }
 .screenshot:hover .tint{
     opacity:0.5;
     color:rgb(251, 128, 65)
 }
-
-.modalBlur{
-    position:fixed;
-    top:0;
-    left:0;
-    height:100%;
-    width:100%;
-    background-color:black;
-    opacity:0.5;
-}
 .exitModal{
-    position:fixed;
+    position:absolute;
     top:75;
-    right:100;
+    right:50;
     z-index:6;
     font-size:50px;
     color:#dae1e7;
@@ -48,15 +46,9 @@ main{
 .exitModal:active{
     transform:Scale(0.8);
 }
-.modalContent{
-    position:relative;
-    z-index:6;
-    height:100%;
-    width:100%;
-    background-color:black;
-    opacity:1;
-}
-.modalContent img{
-    height:100%;
-    width:100%;
+.infoModal img{
+    width:80%;
+    max-width:1200px;
+    margin-right:50px;
+    margin-left:50px;
 }

@@ -17,7 +17,7 @@ function modalOpen(screenshot){
     modalExit.addEventListener("click", modalClose.bind(null, modal, modalExit));
     modalImg.src = screenshot.src;
     console.log(screenshot.src);
-    modal.setAttribute("style", "display:block");
+    modal.setAttribute("style", "display:flex");
 }
 function modalClose(modal, modalExit){
     modal.setAttribute("style", "display:none");
