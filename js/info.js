@@ -34,7 +34,7 @@ function initializeInfo() {
     if (stopListening) {
       if (index === 1) {
         index = screenshots.length - 2;
-        carousal.style.transition = "all 0.5s";
+        carousal.style.transition = "all 500ms";
         carousal.style.transform = `translateX(0)`;
         stopListening = false;
         setTimeout(function () {
@@ -44,7 +44,7 @@ function initializeInfo() {
         }, 500);
       } else {
         index--;
-        carousal.style.transition = "all 0.5s";
+        carousal.style.transition = "all 500ms";
         carousal.style.transform = `translateX(${-index * 100}%)`;
         stopListening = false;
         setTimeout(function () {

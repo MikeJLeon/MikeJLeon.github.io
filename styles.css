@@ -378,11 +378,12 @@ form p {
 }
 .mobileHam {
   display: None;
+  z-index:4;
 }
 @media all and (min-width: 1024px) and (max-width: 1280px) {
 }
 
-@media all and (max-width: 1048px) {
+@media all and (max-width: 44445663) {
   h1 {
     text-align: center;
   }
@@ -409,7 +410,7 @@ form p {
   }
 }
 
-@media all and (min-width: 481px) and (max-width:1047px) {
+@media screen and (max-width:1080px) {
   main {
     padding: 0 80px;
   }
@@ -486,7 +487,7 @@ form p {
     color: #dae1e7;
     background-color: #142850;
     height: 150px;
-    z-index: 4;
+    z-index: 5;
   }
   #leftNav {
     display: flex;
@@ -517,16 +518,16 @@ form p {
   .hamNav {
     border-top: 5px solid white;
     position: fixed;
-    background-color: #00909e;
-    top: -99px;
+    top: -350px;
     margin: 0;
-    height: 250px;
+    height: 450px;
     display: flex;
     flex-direction: column;
-    z-index: 3;
+    z-index: 5;
     transition: top 0.5s;
   }
   .activeHam {
+    z-index:6;
     top: 150px;
     transition: top 0.5s;
   }
@@ -536,16 +537,19 @@ form p {
   }
   .hamNav li {
     display: flex;
-    font-size:3rem;
-    height: 33%;
+    font-size:4rem;
     width: 100%;
+    height:150px;
     justify-content: center;
     align-items: center;
     margin: 0;
-    padding: 0;
+    padding: 20px;
+    background-color: #00909e;
+    border-bottom:5px solid #142850;
   }
   .hamNav li a {
     width: 100%;
+    text-decoration:none;
   }
   .hamNav li a:hover {
     color: white;
@@ -555,15 +559,25 @@ form p {
   }
   .mobileHam {
     display: block;
+    position:fixed;
+    top:0;
+    height:300px;
   }
   #resume a i{
     font-size:100px;
+  }.anchor{
+    height:150px;
   }
-
+  .infoContent, h1{
+    padding:0 50px;
+  }
 }
 
-@media all and (max-width: 480px) {
+@media screen and (max-width: 720px) {
   main {
     min-width: 480px;
+  }
+  .hamNav li{
+    font-size:2.5rem;
   }
 }

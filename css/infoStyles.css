@@ -1,24 +1,28 @@
 main {
   padding: 0 50px;
 }
+h1 {
+  text-align: Center;
+  margin: 50px auto;
+}
 .infoImgs {
   border-radius: 5px;
-  max-width:70%;
+  max-width: 70%;
   display: flex;
   overflow: hidden;
   position: relative;
 }
 .infoImgs img {
-  width:100%;
-  margin:0 5px;
-  border:1px solid #142850;
-  cursor:pointer;
+  width: 100%;
+  margin: 0 5px;
+  border: 1px solid #142850;
+  cursor: pointer;
 }
 .imgCarousal {
   display: flex;
   height: 100%;
-  width:100%;
-  padding:5px;
+  width: 100%;
+  padding: 5px;
 }
 .infoModal {
   display: none;
@@ -63,10 +67,8 @@ main {
   cursor: pointer;
 }
 .infoModal img {
-  width: 80%;
+  width: 100%;
   max-width: 1200px;
-  padding-right: 50px;
-  padding-left: 50px;
   z-index: 5;
 }
 .leftCarousalArrow,
@@ -75,7 +77,7 @@ main {
   margin: 25px;
   transform: scale(1);
   transition: transform 0.1s;
-  cursor:pointer;
+  cursor: pointer;
 }
 .leftCarousalArrow:hover,
 .rightCarousalArrow:hover {
@@ -93,7 +95,106 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 .noTransition {
   transition: none !important;
+}
+.infoContent {
+  margin-top: 50px;
+}
+.infoContent ul {
+  font-size: 1.5rem;
+}
+.infoContent li {
+  margin: 10px 0;
+}
+.linkToProject {
+  margin: 0 auto;
+  display: Flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.linkToProject a {
+  background-color: #142850;
+  border: 1px solid #00909e;
+  font-size: 2rem;
+  width: 200px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  padding: 10px;
+}
+.linkToProject a:hover {
+  background-color: #00909e;
+  border: 1px solid #142850;
+}
+.technologies {
+  width: 100%;
+  display: Flex;
+  justify-content: center;
+  font-size: 5rem;
+  margin-bottom: 50px;
+}
+.technologies i {
+  margin: 0 25px;
+}
+
+@media all and (max-width: 1080px) {
+  main {
+    padding: 0;
+  }
+  .infoModal img {
+    width: 100%;
+    padding: 0;
+  }
+  .infoModal {
+    padding: 0;
+  }
+  .leftCarousalArrow,
+  .rightCarousalArrow {
+    font-size: 9rem;
+    opacity: 50%;
+    position: absolute;
+    color: #00909e;
+    border: 5px solid black;
+    border-radius: 200px;
+  }
+  .leftCarousalArrow:active,
+  .rightCarousalArrow {
+    color: #00909e;
+  }
+  .leftCarousalArrow {
+    z-index: 2;
+    left: 0;
+  }
+  .rightCarousalArrow {
+    right: 0;
+  }
+  .technologies i {
+    font-size: 9rem;
+  }
+  .infoImgs {
+    max-width: 100%;
+  }
+  .infoModal {
+    z-index: 3;
+  }
+  .exitModal {
+    top: 250px;
+    font-size: 6rem;
+  }
+}
+
+@media all and (max-width: 720px) {
+  .infoModal img {
+    width: 100%;
+    padding: 0;
+  }
+  .infoModal {
+    padding: 0;
+  }
 }
